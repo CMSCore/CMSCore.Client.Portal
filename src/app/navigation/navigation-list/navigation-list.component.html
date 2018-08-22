@@ -1,0 +1,16 @@
+<div *ngIf="displayList" fxLayout="column" fxLayoutAlign="center stretch">
+  <button mat-button fxFlex
+          *ngFor="let pageLink of navItems"
+          [routerLink]="['', pageLink.normalizedName]"
+          (click)="onRouteChanging()">
+    {{pageLink.name}}
+  </button>
+</div>
+<div *ngIf="!displayList">
+  <button mat-button fxFlex
+          *ngFor="let pageLink of navItems"
+          [routerLink]="['', pageLink.normalizedName]"
+          (click)="onRouteChanging()">
+    {{pageLink.name}}
+  </button>
+</div>

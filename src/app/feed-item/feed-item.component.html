@@ -1,1 +1,16 @@
-<div fxLayout=""
+<mat-card *ngIf="feedItem">
+  <mat-card-title>
+    {{feedItem.title}}
+  </mat-card-title>
+  <mat-card-subtitle>
+    {{feedItem.description}}
+  </mat-card-subtitle>
+  <mat-card-content>
+    <app-content [content]="feedItem.content"></app-content>
+  </mat-card-content>
+
+</mat-card>
+
+<app-comment *ngIf="feedItem && feedItem.commentsEnabled "
+            [feedItemId]="feedItem.id"
+             [comments]="feedItem.comments"></app-comment>

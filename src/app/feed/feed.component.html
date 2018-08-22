@@ -1,25 +1,12 @@
 <div fxLayout="column" fxLayoutAlign="start stretch">
 
-  <mat-card class="example-card"  *ngFor="let feedItem of feedItemsObservable">
-
-    <mat-card-title>
-      Shiba Inu
-    </mat-card-title>
-    <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-
-      <mat-chip-list>
-        <mat-chip *ngFor="let tag of feedItem.">{{tag.name}}</mat-chip>
-      </mat-chip-list>
-      {{created}}
-    </mat-card-actions>
+  <mat-card *ngIf="!feedItems" fxFlex>
+    <mat-card-header>
+      <p>No articles here yet.</p>
+    </mat-card-header>
   </mat-card>
-
-
+  <div fxLayout="column" fxLayoutAlign="stretch">
+    <app-feed-item-preview-collection fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="stretch"
+                                      [feedItems]="feedItems.feedItems"></app-feed-item-preview-collection>
+  </div>
 </div>

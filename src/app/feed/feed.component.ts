@@ -1,6 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Observable} from 'rxjs';
-import {FeedItemModel} from '../shared/feed-item.model';
+import {FeedItemPreviewViewModel, FeedViewModel} from '../shared/models';
 
 @Component({
   selector: 'app-feed',
@@ -9,7 +8,7 @@ import {FeedItemModel} from '../shared/feed-item.model';
 })
 export class FeedComponent implements OnInit {
   @Input('feedItems')
-   feedItemsObservable:  FeedItemModel[] ;
+  feedItems: FeedViewModel;
 
   constructor() {
   }

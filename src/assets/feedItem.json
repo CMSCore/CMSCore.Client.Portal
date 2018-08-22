@@ -1,0 +1,29 @@
+{
+  "id": "845eb4bd-fe73-4fed-b112-bc73b05803b5",
+  "title": "How to create Web API's",
+  "normalizedTitle": "how-to-create-web-apis",
+  "commentsEnabled": true,
+  "description": "You may find it inconvenient to have to use two different routes for essentially the same action.",
+  "feedId": "cc4061df-6692-4254-ac9d-5424f2f3261a",
+  "created": "2018-07-29T16:17:40.8344776+02:00",
+  "modified": "2018-07-29T16:17:40.8344821+02:00",
+  "comments": null,
+  "content": {
+    "contentId": "458dc06f-5a7a-47ff-8a7c-b721d2b3f324",
+    "versionId": "2c33ab39-d9ad-4788-8e71-dd02fda69e76",
+    "versionNumber": 1,
+    "value": "<p><span style='font-size: 14pt;'>Hello</span></p> <p>You may find it inconvenient to have to use two different routes for essentially the same action. Unfortunately, routes are obviously mapped to actions before model binding has occurred, so the model binder cannot be used as a discriminator.</p> <p>&nbsp;</p> <p>If you try to map the two above actions to the same route you will get an error saying Request matched multiple actions resulting in ambiguity. It may be possible to create a custom route to call the appropriate action based on header values, but in all likelihood that will just be more effort than it's worth!</p> <p><span style='font-size: 14pt;'>Why the change?</span></p> <p>So why has this all changed? Wasn't it simpler and easier the old way? Well, maybe, though there are a number of gotchas to watch out for, particularly when POSTing primitive types.</p> <p><strong>The main reason,</strong> according to Damian Edwards at the community standup, is for security reasons, in particular cross-site request forgery (CSRF) prevention.</p> <p>I will do a later post on anti-CSRF in ASP.NET Core, but in essence, when model binding can occur from multiple different sources, as it did in ASP.NET 4, the resulting stack is not secure by default. I confess I haven't got my head around exactly why that is yet or how it could be exploited, but I presume it is related to identifying your anti-CSRF FormToken when you are getting your data from multiple sources.</p> <p><span style='font-size: 14pt;'>Summary</span></p> <p>In short, if your model binding isn't working properly, make sure it's trying to bind from the right part of your request and you have registered the appropriate formatters.</p> <p>If it's JSON binding you're doing, adding<span style='background-color: #ebebeb;'> [FromBody]<span style='background-color: #ffffff;'> t</span></span>o your parameters should do the trick!</p>"
+  },
+  "tags": [
+    {
+      "id": "96a97f79-f408-44ca-9e7e-9fe85ae26ac0",
+      "name": ".NET Core",
+      "normalizedName": "net-core"
+    },
+    {
+      "id": "83962fe6-8257-4186-8e7c-70c810cd1fbb",
+      "name": "Web API's",
+      "normalizedName": "web-apis"
+    }
+  ]
+}

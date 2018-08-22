@@ -1,0 +1,19 @@
+import {Component, Input, OnInit} from '@angular/core';
+import {CommentViewModel} from '../../shared/models';
+
+@Component({
+  selector: 'app-comment-item',
+  templateUrl: './comment-item.component.html',
+  styleUrls: ['./comment-item.component.scss']
+})
+export class CommentItemComponent implements OnInit {
+
+  @Input('comments')
+  public comments: CommentViewModel[];
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

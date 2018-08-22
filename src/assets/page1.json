@@ -1,0 +1,142 @@
+{
+  "id": "c4805f49-7a20-40c6-8608-1e82b66da706",
+  "name": "Code tutorials",
+  "normalizedName": "code-tutorials",
+  "created": "2018-07-26T17:03:00.7693576",
+  "modified": "2018-07-26T17:03:00.7711911",
+  "content": {
+    "contentId": "7ae6f7cb-074f-4b17-8fd0-b585cbceef68",
+    "versionId": "26bd1773-b8a9-423d-aa76-4274115ff6e0",
+    "versionNumber": 1,
+    "value": "hello this is some content"
+  },
+  "feed": {
+    "date": "2018-07-26T17:03:02.4989083",
+    "feedItems": [
+      {
+        "id": "845eb4bd-fe73-4fed-b112-bc73b05803b5",
+        "title": "How to create Web API's",
+        "normalizedTitle": "how-to-create-web-apis",
+        "description": "You may find it inconvenient to have to use two different routes for essentially the same action.",
+        "created": "2018-07-29T16:17:40.8344776+02:00",
+        "modified": "2018-07-29T16:17:40.8344821+02:00",
+        "tags": [
+          {
+            "id": "96a97f79-f408-44ca-9e7e-9fe85ae26ac0",
+            "name": ".NET Core",
+            "normalizedName": "net-core"
+          },
+          {
+            "id": "83962fe6-8257-4186-8e7c-70c810cd1fbb",
+            "name": "Web API's",
+            "normalizedName": "web-apis"
+          }
+        ]
+      },
+      {
+        "id": "845eb4bd-fe73-4fed-b112-bc73b05803b5",
+        "title": "How to create Web API's",
+        "normalizedTitle": "how-to-create-web-apis",
+        "description": "You may find it inconvenient to have to use two different routes for essentially the same action.",
+        "created": "2018-07-29T16:17:40.8344776+02:00",
+        "modified": "2018-07-29T16:17:40.8344821+02:00",
+        "tags": [
+          {
+            "id": "96a97f79-f408-44ca-9e7e-9fe85ae26ac0",
+            "name": ".NET Core",
+            "normalizedName": "net-core"
+          },
+          {
+            "id": "83962fe6-8257-4186-8e7c-70c810cd1fbb",
+            "name": "Web API's",
+            "normalizedName": "web-apis"
+          }
+        ]
+      },
+      {
+        "id": "845eb4bd-fe73-4fed-b112-bc73b05803b5",
+        "title": "How to create Web API's",
+        "normalizedTitle": "how-to-create-web-apis",
+        "description": "You may find it inconvenient to have to use two different routes for essentially the same action.",
+        "created": "2018-07-29T16:17:40.8344776+02:00",
+        "modified": "2018-07-29T16:17:40.8344821+02:00",
+        "tags": [
+          {
+            "id": "96a97f79-f408-44ca-9e7e-9fe85ae26ac0",
+            "name": ".NET Core",
+            "normalizedName": "net-core"
+          },
+          {
+            "id": "83962fe6-8257-4186-8e7c-70c810cd1fbb",
+            "name": "Web API's",
+            "normalizedName": "web-apis"
+          }
+        ]
+      },
+      {
+        "id": "845eb4bd-fe73-4fed-b112-bc73b05803b5",
+        "title": "How to create Web API's",
+        "normalizedTitle": "how-to-create-web-apis",
+        "description": "You may find it inconvenient to have to use two different routes for essentially the same action.",
+        "created": "2018-07-29T16:17:40.8344776+02:00",
+        "modified": "2018-07-29T16:17:40.8344821+02:00",
+        "tags": [
+          {
+            "id": "96a97f79-f408-44ca-9e7e-9fe85ae26ac0",
+            "name": ".NET Core",
+            "normalizedName": "net-core"
+          },
+          {
+            "id": "83962fe6-8257-4186-8e7c-70c810cd1fbb",
+            "name": "Web API's",
+            "normalizedName": "web-apis"
+          }
+        ]
+      },
+      {
+        "id": "845eb4bd-fe73-4fed-b112-bc73b05803b5",
+        "title": "How to create Web API's",
+        "normalizedTitle": "how-to-create-web-apis",
+        "description": "You may find it inconvenient to have to use two different routes for essentially the same action.",
+        "created": "2018-07-29T16:17:40.8344776+02:00",
+        "modified": "2018-07-29T16:17:40.8344821+02:00",
+        "tags": [
+          {
+            "id": "96a97f79-f408-44ca-9e7e-9fe85ae26ac0",
+            "name": ".NET Core",
+            "normalizedName": "net-core"
+          },
+          {
+            "id": "83962fe6-8257-4186-8e7c-70c810cd1fbb",
+            "name": "Web API's",
+            "normalizedName": "web-apis"
+          }
+        ]
+      },
+      {
+        "id": "845eb4bd-fe73-4fed-b112-bc73b05803b5",
+        "title": "How to create Web API's",
+        "normalizedTitle": "how-to-create-web-apis",
+        "description": "You may find it inconvenient to have to use two different routes for essentially the same action.",
+        "created": "2018-07-29T16:17:40.8344776+02:00",
+        "modified": "2018-07-29T16:17:40.8344821+02:00",
+        "tags": [
+          {
+            "id": "96a97f79-f408-44ca-9e7e-9fe85ae26ac0",
+            "name": ".NET Core",
+            "normalizedName": "net-core"
+          },
+          {
+            "id": "83962fe6-8257-4186-8e7c-70c810cd1fbb",
+            "name": "Web API's",
+            "normalizedName": "web-apis"
+          }
+        ]
+      }
+    ],
+    "id": "cc4061df-6692-4254-ac9d-5424f2f3261a",
+    "modified": "2018-07-26T17:03:02.4989106",
+    "name": "page-feed2",
+    "normalizedName": "pagefeed2"
+  }
+}

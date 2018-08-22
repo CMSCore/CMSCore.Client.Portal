@@ -1,0 +1,32 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    [style.hidden]="!(isHandset$ | async)"
+    #drawer
+    class="sidenav"
+    fixedInViewport="true"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="'over'"
+    [opened]="false">
+    <mat-toolbar color="primary">Menu</mat-toolbar>
+    <app-navigation-list *ngIf="isHandset$ | async" [displayList]="isHandset$ | async" [navItems]="navItemsObservable | async" (routeChanging)="drawer.close()"></app-navigation-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+
+      <span>PortalClientApp</span>
+
+      <app-navigation-list *ngIf="!(isHandset$ | async)" [navItems]="navItemsObservable | async" (routeChanging)="drawer.close()"></app-navigation-list>
+    </mat-toolbar>
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

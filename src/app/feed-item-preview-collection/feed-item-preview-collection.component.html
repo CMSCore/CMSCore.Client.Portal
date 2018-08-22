@@ -1,0 +1,26 @@
+<mat-card fxFlex="100" *ngFor="let feedItem of feedItems" class="feed-item-preview">
+
+  <mat-card-title>
+    <a [routerLink]="[feedItem.normalizedTitle]"> {{feedItem.title}}</a>
+  </mat-card-title>
+
+  <mat-card-content>
+    <p>
+      {{feedItem.description}}
+    </p>
+  </mat-card-content>
+
+  <mat-card-actions fxLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-chip-list>
+        <mat-chip *ngFor="let tag of feedItem.tags">{{tag.name}}</mat-chip>
+      </mat-chip-list>
+    </div>
+
+    <div fxFlex="nogrow" style="padding-right: 24px">
+      <mat-card-subtitle> {{feedItem.created | date:'fullDate'}}</mat-card-subtitle>
+    </div>
+
+  </mat-card-actions>
+
+</mat-card>

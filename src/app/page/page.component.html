@@ -1,3 +1,20 @@
-<p>
-  page works!
-</p>
+<mat-card class="example-card">
+  <div *ngIf="page">
+    <mat-card-title>
+      {{page.name}}
+    </mat-card-title>
+    <mat-card-content>
+
+      <div *ngIf="page.content">
+        <app-content [content]="page.content" style="padding-bottom: 16px"></app-content>
+      </div>
+
+    </mat-card-content>
+
+    <div *ngIf="page.feed">
+      <app-feed [feedItems]="page.feed">
+      </app-feed>
+    </div>
+  </div>
+</mat-card>
+

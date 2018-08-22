@@ -1,0 +1,47 @@
+<form (ngSubmit)="submitComment()" class="example-form">
+
+  <mat-form-field class="example-full-width">
+    <input matInput #commentFullName
+           [formControl]="nameFormControl"
+           [maxlength]="100"
+           [minlength]="2"
+           [(ngModel)]="comment.fullName"
+           name="commentFullName"
+           placeholder="Your name">
+    <mat-error *ngIf="nameFormControl.hasError('minLength')">
+      Name must be longer than 2 characters
+    </mat-error>
+    <mat-error *ngIf="nameFormControl.hasError('maxLength')">
+      Name must be shorter than 100 characters
+    </mat-error>
+    <mat-error *ngIf="nameFormControl.hasError('required')">
+      Name is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <textarea matInput #commentText
+              [maxlength]="commentMaxLength"
+              [minlength]="commentMinLength"
+              [formControl]="textFormControl"
+              [(ngModel)]="comment.text"
+              name="commentText"
+              placeholder="Comment"></textarea>
+     <mat-hint align="start"><strong>Please use appropriate language and don't be a dick.</strong></mat-hint>
+    <mat-hint align="end">{{commentText.value.length - commentMinLength}} / {{commentMaxLength}}</mat-hint>
+    <mat-error *ngIf="textFormControl.hasError('minLength')">
+      Text must be longer than {{commentMinLength}} characters
+    </mat-error>
+    <mat-error *ngIf="textFormControl.hasError('maxLength')">
+      Text must be shorter than {{commentMaxLength}} characters
+    </mat-error>
+    <mat-error *ngIf="textFormControl.hasError('required')">
+      This field is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+
+  <button mat-button [disabled]="!textFormControl.valid && !nameFormControl.valid"
+          type="submit">Submit
+  </button>
+
+</form>

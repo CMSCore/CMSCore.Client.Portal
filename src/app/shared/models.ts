@@ -1,95 +1,102 @@
-
 export interface CommentViewModel {
-  CommentId: string;
-  Created: Date | string;
-  FullName: string;
-  Text: string;
+  commentId: string;
+  created: Date | string;
+  fullName: string;
+  text: string;
 }
 
 export interface ContentViewModel {
-  ContentId: string;
-  VersionId: string;
-  VersionNumber: number;
-  Value: string;
+  contentId: string;
+  versionId: string;
+  versionNumber: number;
+  value: string;
 }
 
 export interface FeedItemPreviewViewModel {
-  Id: string;
-  Title: string;
-  NormalizedTitle: string;
-  Description: string;
-  Created: Date | string;
-  Modified: Date | string;
-  Tags: TagViewModel[];
+  id: string;
+  title: string;
+  normalizedTitle: string;
+  description: string;
+  created: Date | string;
+  modified: Date | string;
+  tags: TagViewModel[];
 }
 
-export interface FeedItemViewModel {
-  Id: string;
-  Title: string;
-  NormalizedTitle: string;
-  CommentsEnabled: boolean;
-  Description: string;
-  FeedId: string;
-  Created: Date | string;
-  Modified: Date | string;
-  Comments: CommentViewModel[];
-  Content: ContentViewModel;
-  Tags: TagViewModel[];
-}
+//
+// export interface FeedItemViewModel {
+//   id: string;
+//   title: string;
+//   normalizedTitle: string;
+//   commentsEnabled: boolean;
+//   description: string;
+//   feedId: string;
+//   created: Date | string;
+//   modified: Date | string;
+//   comments: CommentViewModel[];
+//   content: ContentViewModel;
+//   tags: TagViewModel[];
+// }
 
 export interface FeedItemViewModel {
-  Id: string;
-  Title: string;
-  NormalizedTitle: string;
-  CommentsEnabled: boolean;
-  Description: string;
-  FeedId: string;
-  Created: Date | string;
-  Modified: Date | string;
-  Comments: CommentViewModel[];
-  Content: ContentViewModel;
-  Tags: TagViewModel[];
+  id: string;
+  title: string;
+  normalizedTitle: string;
+  commentsEnabled: boolean;
+  description: string;
+  feedId: string;
+  created: Date | string;
+  modified: Date | string;
+  comments: CommentViewModel[];
+  content: ContentViewModel;
+  tags: TagViewModel[];
 }
 
 export interface FeedViewModel {
-  Date: Date | string;
-  FeedItems: FeedItemPreviewViewModel[];
-  Id: string;
-  Modified: Date | string;
-  Name: string;
-  NormalizedName: string;
+  date: Date | string;
+  feedItems: FeedItemPreviewViewModel[];
+  id: string;
+  modified: Date | string;
+  name: string;
+  normalizedName: string;
 }
 
 export interface PageTreeViewModel {
-  Date: Date | string;
-  Id: string;
-  Name: string;
-  NormalizedName: string;
+  date: Date | string;
+  id: string;
+  name: string;
+  normalizedName: string;
 }
 
 export interface PageViewModel {
-  Id: string;
-  Name: string;
-  NormalizedName: string;
-  Created: Date | string;
-  Modified: Date | string;
-  Content: ContentViewModel;
-  Feed: FeedViewModel;
+  id: string;
+  name: string;
+  normalizedName: string;
+  created: Date | string;
+  modified: Date | string;
+  content: ContentViewModel;
+  feed: FeedViewModel;
 }
 
 export interface TagViewModel {
-  Id: string;
-  Name: string;
-  NormalizedName: string;
+  id: string;
+  name: string;
+  normalizedName: string;
 }
 
 export interface UserViewModel {
-  Created: Date | string;
-  Email: string;
-  FirstName: string;
-  Id: string;
-  IdentityUserId: string;
-  LastName: string;
-  Modified: Date | string;
+  created: Date | string;
+  email: string;
+  firstName: string;
+  id: string;
+  identityUserId: string;
+  lastName: string;
+  modified: Date | string;
 }
+
+export interface CreateCommentViewModel {
+  feedItemId: string,
+  fullName: string,
+  text: string
+}
+
 
